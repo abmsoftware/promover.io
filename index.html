@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your SaaS Solution - Interactive Pitch Deck</title>
-    <meta name="description" content="Effortlessly create and execute promotion campaigns for your business with Your SaaS Solution.">
+    <title>Promo.ver - Promotion Campaign Platform</title>
+    <meta name="description" content="Effortlessly create and execute promotion campaigns for your business with Promo.ver.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/logo-styles.css">
+    <link rel="stylesheet" href="css/navbar-fix.css">
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -17,15 +19,19 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="logo">Your SaaS</div>
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.jpg" alt="Promo.ver Logo" style="height: 120px !important; width: auto !important; max-width: none !important; max-height: none !important;">
+            </a>
             <button class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+            <div class="audience-tabs">
+                <a href="index.html" class="audience-tab active">For Businesses</a>
+                <a href="investors.html" class="audience-tab">For Investors</a>
+            </div>
             <ul class="nav-links">
                 <li><a href="#problem">Problem</a></li>
                 <li><a href="#solution">Solution</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#use-cases">Use Cases</a></li>
-                <li><a href="#market">Market</a></li>
-                <li><a href="#business-model">Business Model</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -35,7 +41,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Your SaaS Solution</h1>
+            <h1>Promo.ver</h1>
             <p>Effortlessly create and execute promotion campaigns for your business</p>
             <a href="#contact" class="cta-button">Start Your Free Trial</a>
         </div>
@@ -90,7 +96,7 @@
                         <div class="product-screenshot">
                             <div class="interface-mockup">
                                 <div class="mockup-header">
-                                    <div class="mockup-logo">Your SaaS Dashboard</div>
+                                    <div class="mockup-logo">Promo.ver Dashboard</div>
                                 </div>
                                 <div class="mockup-content">
                                     <div class="mockup-sidebar">
@@ -188,287 +194,6 @@
         </div>
     </section>
 
-    <!-- Market Opportunity Section -->
-    <section id="market" class="slide-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Market Opportunity</h2>
-                <p class="section-subtitle">A $15 Billion Market Opportunity</p>
-            </div>
-            <div class="fade-in">
-                <ul class="bullet-list">
-                    <li>The global SaaS market for marketing solutions is growing at <strong>14.2% CAGR</strong></li>
-                    <li>Targeting <strong>SMBs, mid-market companies, and enterprises</strong> across multiple industries</li>
-                    <li>Businesses are increasingly investing in automated marketing to <strong>improve engagement and drive revenue</strong></li>
-                </ul>
-                <div class="chart-container">
-                    <div class="market-chart">
-                        <div class="chart-title">Global Marketing SaaS Market Size ($ Billions)</div>
-                        <div class="chart-bars">
-                            <div class="chart-bar">
-                                <div class="bar" style="height: 30%;"></div>
-                                <div class="bar-label">2023</div>
-                                <div class="bar-value">$10.5B</div>
-                            </div>
-                            <div class="chart-bar">
-                                <div class="bar" style="height: 40%;"></div>
-                                <div class="bar-label">2024</div>
-                                <div class="bar-value">$12.0B</div>
-                            </div>
-                            <div class="chart-bar">
-                                <div class="bar" style="height: 50%;"></div>
-                                <div class="bar-label">2025</div>
-                                <div class="bar-value">$13.7B</div>
-                            </div>
-                            <div class="chart-bar">
-                                <div class="bar" style="height: 60%;"></div>
-                                <div class="bar-label">2026</div>
-                                <div class="bar-value">$15.6B</div>
-                            </div>
-                            <div class="chart-bar">
-                                <div class="bar" style="height: 70%;"></div>
-                                <div class="bar-label">2027</div>
-                                <div class="bar-value">$17.8B</div>
-                            </div>
-                            <div class="chart-bar">
-                                <div class="bar" style="height: 85%;"></div>
-                                <div class="bar-label">2028</div>
-                                <div class="bar-value">$20.3B</div>
-                            </div>
-                        </div>
-                        <div class="chart-axis">
-                            <div>Source: Market Research Forecast 2023-2028</div>
-                            <div>CAGR: 14.2%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Business Model Section -->
-    <section id="business-model" class="slide-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Business Model</h2>
-                <p class="section-subtitle">Scalable and Recurring Revenue Model</p>
-            </div>
-            <div class="two-column">
-                <div class="column fade-in">
-                    <h3>Subscription Tiers</h3>
-                    <ul class="bullet-list">
-                        <li><strong>Freemium:</strong> Basic features, limited campaigns</li>
-                        <li><strong>Basic ($29/mo):</strong> Essential features for small businesses</li>
-                        <li><strong>Standard ($79/mo):</strong> Advanced features for growing businesses</li>
-                        <li><strong>Enterprise ($199+/mo):</strong> Custom solutions for large organizations</li>
-                    </ul>
-                </div>
-                <div class="column fade-in">
-                    <h3>Additional Revenue Streams</h3>
-                    <ul class="bullet-list">
-                        <li><strong>Add-Ons:</strong> Premium features, integrations, custom reports</li>
-                        <li><strong>Usage-Based Fees:</strong> Charges for high-volume campaigns</li>
-                        <li><strong>Services:</strong> Onboarding, consulting, and training</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="chart-container fade-in">
-                <div class="revenue-model">
-                    <div class="pricing-tier">
-                        <div class="tier-name">Freemium</div>
-                        <div class="tier-price">$0</div>
-                        <div class="tier-features">
-                            • 1 user<br>
-                            • 500 contacts<br>
-                            • Basic templates<br>
-                            • Email only
-                        </div>
-                    </div>
-                    <div class="pricing-tier">
-                        <div class="tier-name">Basic</div>
-                        <div class="tier-price">$29/mo</div>
-                        <div class="tier-features">
-                            • 3 users<br>
-                            • 2,500 contacts<br>
-                            • Custom templates<br>
-                            • Email + SMS
-                        </div>
-                    </div>
-                    <div class="pricing-tier">
-                        <div class="tier-name">Standard</div>
-                        <div class="tier-price">$79/mo</div>
-                        <div class="tier-features">
-                            • 10 users<br>
-                            • 10,000 contacts<br>
-                            • Advanced analytics<br>
-                            • All channels
-                        </div>
-                    </div>
-                    <div class="pricing-tier">
-                        <div class="tier-name">Enterprise</div>
-                        <div class="tier-price">$199+/mo</div>
-                        <div class="tier-features">
-                            • Unlimited users<br>
-                            • Unlimited contacts<br>
-                            • Custom integrations<br>
-                            • Dedicated support
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Financial Projections Section -->
-    <section class="slide-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Financial Projections</h2>
-                <p class="section-subtitle">Projected Revenue Growth Over 5 Years</p>
-            </div>
-            <div class="fade-in">
-                <ul class="bullet-list">
-                    <li><strong>Year 1:</strong> $1.2M in revenue (based on customer acquisition and average revenue per customer)</li>
-                    <li><strong>Year 2:</strong> $3.5M in revenue (compounded by reinvestment strategy)</li>
-                    <li><strong>Year 3-5:</strong> $8.7M to $25M in revenue (based on exponential growth and reinvestment)</li>
-                    <li><strong>Key Drivers:</strong> Increasing customer base, expanding product offerings, and optimizing CAC</li>
-                </ul>
-                <div class="chart-container">
-                    <div class="financial-chart">
-                        <div class="chart-title">Projected Annual Revenue ($ Millions)</div>
-                        <div class="financial-bars">
-                            <div class="financial-bar">
-                                <div class="financial-bar-stack">
-                                    <div class="segment segment-1" style="height: 40px;"></div>
-                                </div>
-                                <div class="bar-label">Year 1</div>
-                                <div class="bar-value">$1.2M</div>
-                            </div>
-                            <div class="financial-bar">
-                                <div class="financial-bar-stack">
-                                    <div class="segment segment-1" style="height: 120px;"></div>
-                                </div>
-                                <div class="bar-label">Year 2</div>
-                                <div class="bar-value">$3.5M</div>
-                            </div>
-                            <div class="financial-bar">
-                                <div class="financial-bar-stack">
-                                    <div class="segment segment-1" style="height: 180px;"></div>
-                                </div>
-                                <div class="bar-label">Year 3</div>
-                                <div class="bar-value">$8.7M</div>
-                            </div>
-                            <div class="financial-bar">
-                                <div class="financial-bar-stack">
-                                    <div class="segment segment-1" style="height: 220px;"></div>
-                                </div>
-                                <div class="bar-label">Year 4</div>
-                                <div class="bar-value">$15.2M</div>
-                            </div>
-                            <div class="financial-bar">
-                                <div class="financial-bar-stack">
-                                    <div class="segment segment-1" style="height: 260px;"></div>
-                                </div>
-                                <div class="bar-label">Year 5</div>
-                                <div class="bar-value">$25M</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Go-To-Market Strategy Section -->
-    <section class="slide-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Go-To-Market Strategy</h2>
-                <p class="section-subtitle">Our roadmap to success</p>
-            </div>
-            <div class="fade-in">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-title">Phase 1: Brand Awareness (Months 1-6)</div>
-                        <div class="timeline-content">Build brand awareness through digital ads, content marketing, and partnerships.</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-title">Phase 2: Customer Expansion (Months 7-18)</div>
-                        <div class="timeline-content">Expand customer base with targeted campaigns for SMBs and mid-market businesses.</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-title">Phase 3: Enterprise Focus (Months 19-30)</div>
-                        <div class="timeline-content">Focus on enterprise sales with custom solutions, training, and support.</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-title">Phase 4: Global Expansion (Months 31+)</div>
-                        <div class="timeline-content">International expansion and vertical market targeting.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Competitive Advantage Section -->
-    <section class="slide-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Competitive Advantage</h2>
-                <p class="section-subtitle">Why Your SaaS Solution is Different</p>
-            </div>
-            <div class="fade-in">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Features</th>
-                            <th>Your SaaS</th>
-                            <th>Competitor A</th>
-                            <th>Competitor B</th>
-                            <th>Competitor C</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Multi-Channel Integration</td>
-                            <td class="feature-check">✓</td>
-                            <td class="feature-x">✗</td>
-                            <td class="feature-check">✓</td>
-                            <td class="feature-x">✗</td>
-                        </tr>
-                        <tr>
-                            <td>Advanced Analytics</td>
-                            <td class="feature-check">✓</td>
-                            <td class="feature-check">✓</td>
-                            <td class="feature-x">✗</td>
-                            <td class="feature-check">✓</td>
-                        </tr>
-                        <tr>
-                            <td>Ease of Use</td>
-                            <td class="feature-check">✓</td>
-                            <td class="feature-x">✗</td>
-                            <td class="feature-x">✗</td>
-                            <td class="feature-check">✓</td>
-                        </tr>
-                        <tr>
-                            <td>Customizable Reporting</td>
-                            <td class="feature-check">✓</td>
-                            <td class="feature-check">✓</td>
-                            <td class="feature-x">✗</td>
-                            <td class="feature-x">✗</td>
-                        </tr>
-                        <tr>
-                            <td>Affordable Pricing</td>
-                            <td class="feature-check">✓</td>
-                            <td class="feature-x">✗</td>
-                            <td class="feature-check">✓</td>
-                            <td class="feature-x">✗</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
     <!-- Testimonials Section -->
     <section id="testimonials" class="slide-section">
         <div class="container">
@@ -497,63 +222,6 @@
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="slide-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Our Team</h2>
-                <p class="section-subtitle">Experienced leadership driving innovation</p>
-            </div>
-            <div class="chart-container fade-in">
-                <div class="team-section">
-                    <div class="team-member">
-                        <div class="member-avatar">CEO</div>
-                        <div class="member-name">Jane Smith</div>
-                        <div class="member-title">Chief Executive Officer</div>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-avatar">CTO</div>
-                        <div class="member-name">Mike Johnson</div>
-                        <div class="member-title">Chief Technology Officer</div>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-avatar">CMO</div>
-                        <div class="member-name">Lisa Chen</div>
-                        <div class="member-title">Chief Marketing Officer</div>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-avatar">COO</div>
-                        <div class="member-name">David Wilson</div>
-                        <div class="member-title">Chief Operations Officer</div>
-                    </div>
-                </div>
-            </div>
-            <div class="two-column">
-                <div class="column fade-in">
-                    <div class="highlight-box">
-                        <h3>Leadership Team</h3>
-                        <ul class="bullet-list">
-                            <li><strong>CEO:</strong> 15+ years in SaaS and marketing technology</li>
-                            <li><strong>CTO:</strong> Former tech lead at major marketing platform</li>
-                            <li><strong>CMO:</strong> Digital marketing expert with agency background</li>
-                            <li><strong>COO:</strong> Operations specialist with scaling experience</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column fade-in">
-                    <div class="highlight-box">
-                        <h3>Advisory Board</h3>
-                        <ul class="bullet-list">
-                            <li>Former CMO of Fortune 500 company</li>
-                            <li>Venture capital partner specializing in SaaS</li>
-                            <li>Marketing automation pioneer</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Call to Action Section -->
     <section id="contact" class="cta-section">
         <div class="container">
@@ -561,7 +229,7 @@
             <p>Experience the power of automated, integrated promotion campaigns for your business.</p>
             <a href="#" class="cta-button">Get Started</a>
             <div class="contact-info">
-                contact@yoursaas.com | www.yoursaas.com | (555) 123-4567
+                contact@promo.ver | www.promo.ver | (555) 123-4567
             </div>
         </div>
     </section>
@@ -570,7 +238,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
-                <h3>Your SaaS</h3>
+                <h3>Promo.ver</h3>
                 <p>Effortlessly create and execute promotion campaigns for your business.</p>
             </div>
             <div class="footer-column">
@@ -578,7 +246,7 @@
                 <ul>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#use-cases">Use Cases</a></li>
-                    <li><a href="#business-model">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
                     <li><a href="#">Documentation</a></li>
                 </ul>
             </div>
@@ -588,7 +256,7 @@
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press</a></li>
+                    <li><a href="investors.html">Investors</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -608,9 +276,15 @@
                 <a href="#" aria-label="Instagram"><span>IG</span></a>
                 <a href="#" aria-label="LinkedIn"><span>LI</span></a>
             </div>
-            <p>&copy; 2025 Your SaaS. All rights reserved.</p>
+            <p>&copy; 2025 Promo.ver. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">↑</a>
+    
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
