@@ -1,0 +1,38 @@
+/* Additional navbar fixes to ensure logo displays properly */
+.navbar {
+    padding: 5px 0;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 20px;
+}
+
+/* Ensure logo has priority in flex layout */
+.site-logo {
+    flex: 0 0 auto;
+}
+
+/* Adjust spacing for other navbar elements */
+.audience-tabs {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .audience-tabs {
+        margin-left: 0;
+        margin-right: 0;
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}

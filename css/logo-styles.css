@@ -1,0 +1,88 @@
+/* Logo Styles with !important declarations */
+.site-logo {
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    margin-right: 20px !important;
+    flex: 0 0 auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+.site-logo img {
+    height: 120px !important; /* Extremely increased from 80px to 120px */
+    width: auto !important; /* Ensure proper aspect ratio */
+    max-width: none !important; /* Prevents container constraints */
+    max-height: none !important; /* Prevents container constraints */
+    margin-right: 15px !important;
+    object-fit: contain !important;
+}
+
+/* Navbar adjustments to accommodate larger logo */
+.navbar {
+    padding: 10px 0 !important;
+    min-height: 140px !important; /* Ensure navbar is tall enough */
+    overflow: visible !important;
+}
+
+.navbar-container {
+    min-height: 140px !important; /* Ensure container is tall enough */
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+}
+
+/* Audience Tabs */
+.audience-tabs {
+    display: flex !important;
+    margin-left: 20px !important;
+}
+
+.audience-tab {
+    padding: 5px 15px !important;
+    margin-right: 5px !important;
+    border-radius: 4px 4px 0 0 !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    text-decoration: none !important;
+    transition: background-color 0.3s !important;
+}
+
+.audience-tab:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.audience-tab.active {
+    background-color: #ff7c4d !important;
+    font-weight: 600 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .site-logo img {
+        height: 100px !important; /* Still very large on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .audience-tabs {
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+        order: 3 !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    
+    .site-logo img {
+        height: 80px !important; /* Still large on mobile */
+    }
+    
+    .navbar-container {
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+    
+    .site-logo {
+        margin-bottom: 10px !important;
+    }
+}
